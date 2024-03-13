@@ -1,0 +1,42 @@
+/* Este código CSS establece la altura y el color de fondo de toda la página al 100% y un color gris oscuro respectivamente. */
+html,
+body {
+  height: 100%;
+  background-color: #121212;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+
+/* Aumentar el índice z cuando el formulario está enfocado */
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Agrega color y sombra al borde cuando esta en foco */
+.form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* Establece el color y sombra paralela para .logo y svg */
+.logo, svg {
+    color: #FF0000;
+    filter: drop-shadow( 5px 5px 3px rgba(255, 0, 0, 0.6)) ;
+}
