@@ -1,5 +1,6 @@
 <h1 align="center">Proyecto Alke Wallet</h1>
-![logo-alke-wallet](https://github.com/Rafael-Serrano-V/alkeWallet/assets/77652697/a7f1cde4-36f2-4e05-a652-ba9e54b730ce)
+<p align="center"><img src="https://github.com/Rafael-Serrano-V/alkeWallet/blob/main/img/logo-alke-wallet.png"> </p>
+
 
 <h2>Situación inicial 📍</h2>
 <p>La problemática a resolver es brindar a
