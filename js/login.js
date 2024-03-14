@@ -9,7 +9,7 @@ function login(e) {
   const logeado = email.value === 'usuario@email.cl' && contrasenia.value === "12345";
   if (logeado) { 
     sessionStorage.setItem("autenticado", true);
-    location.href = "../html/menu.html"
+    location.href = "/html/menu.html"
   }else{
     alert("Usuario y/o contraseña incorrectos");
   }
