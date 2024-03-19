@@ -4,6 +4,7 @@ function realizarDeposito() {
 
   //Obtiene el saldo actual y el monto a depositar
   let saldo = document.getElementById("saldo").innerText.split("$")[1];
+  console.log(saldo);
   let montoADepositar = document.getElementById("montoADepositar").value;
 
   if (montoADepositar === "" || montoADepositar < 1000) {
@@ -20,5 +21,10 @@ function realizarDeposito() {
   }
 }
 
-document.getElementById("saldo").innerText = "$" + localStorage.getItem("saldo");
+if(localStorage.getItem('saldo')===null){
+  document.getElementById("saldo").innerText = "$0";
+}else{
+  document.getElementById("saldo").innerText = "$" + localStorage.getItem("saldo");
+}
+
 

@@ -20,5 +20,10 @@ $("#movimientosModal").on("shown.bs.modal", function (e){
     
 });
 
-//Actualiza el saldo disponible
+
+if(localStorage.getItem('saldo') === null){
+    document.getElementById("saldoDisponible").innerText = "$0";
+}else{
+    //Actualiza el saldo disponible
 document.getElementById("saldoDisponible").innerText = "$" + localStorage.getItem("saldo");
+}
